@@ -1,12 +1,13 @@
 ---
 title: My Team!
 ---
-
-<ul class="list-inline text-center">
-  <% ["sagnieresy", "bradymichael27"].each do |gh_username| %>
-    <li class="grow teammate">
+<div class="teammate">
+  <ul class="list-inline text-center">
+    <% ["sagnieresy", "bradymichael27"].each do |gh_username| %>
+    <li class="grow teammate-card">
       <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "avatar-big" %>
       <h3><%= gh_username.capitalize %></h3>
     </li>
-  <% end %>
-</ul>
+    <% end %>
+  </ul>
+</div>

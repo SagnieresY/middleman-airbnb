@@ -1,4 +1,7 @@
-.teammate:hover {
-background-color: lightblue;
-border-radius: 10px;
+.teammate{
+  margin-top: 20px;
+}
+.teammate-card:hover {
+  background-color: $light-gray;
+  border-radius: 10px;
 }
