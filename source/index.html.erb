@@ -8,8 +8,8 @@ title: Le Wagon - Middleman
     <p>As many cities as I manually put in the datasheet.</p>
     <form action="#" class="form-inline">
      <select name="" id="" class="form-control input-lg banner-input-corner">
-       <% data.cities.each do |city| %>
-          <option value=""><%= city.name %></option>
+       <% data.cities.each do |city, infos| %>
+          <option value=""><%= infos.name %></option>
         <%end %>
      </select>
      <input type="submit" class="btn btn-primary btn-lg banner-input-corner" value="Take me there.">
@@ -21,15 +21,15 @@ title: Le Wagon - Middleman
 <div class="container">
   <h2 class="text-center">What is your next trip?</h2>
   <div class="row">
-    <% data.cities.each do |city| %>
+    <% data.cities.each do |city, infos| %>
     <div class="col-xs-12 col-sm-4">
       <div class="card grow">
-        <div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= city.name.downcase %>');">
-          <div class="card-category"><h3><%= city.name %></h3></div>
+        <div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= infos.name.downcase %>');">
+          <div class="card-category"><h3><%= infos.name %></h3></div>
           <img src="https://kitt.lewagon.com/placeholder/users/sagnieresy" alt="Avatar" class="avatar">
           <div class="card-description">
             <h2>Fun fact</h2>
-            <p><%= city.description %></p>
+            <p><%= infos.description %></p>
           </div>
         </div>
         <div class="card-footer">

@@ -1,18 +1,45 @@
-- name: "Montreal"
+montreal:
+  name: "Montreal"
   description: "Cold but fun!"
-- name: "Bali"
+  country: "Canada"
+  fun_rating: 10
+bali:
+  name: "Bali"
   description: "Surf's up!"
-- name: "Paris"
+  country: "Indonesia"
+  fun_rating: 10
+paris:
+  name: "Paris"
   description: "Macarons anyone?"
-- name: "Melbourne"
+  country: "France"
+  fun_rating: 8
+melbourne:
+  name: "Melbourne"
   description: "Deadly but artsy"
-- name: "Budapest"
+  country: "Australia"
+  fun_rating: 6
+budapest:
+  name: "Budapest"
   description: "You hungary?"
-- name: "Rennes"
+  country: "Hungary"
+  fun_rating: 9
+rennes:
+  name: "Rennes"
   description: "Random one.."
-- name: "Barcelona"
+  country: "France"
+  fun_rating: 3
+barcelona:
+  name: "Barcelona"
   description: "It's barthelona.."
-- name: "Tokyo"
+  country: "Spain"
+  fun_rating: 5
+tokyo:
+  name: "Tokyo"
   description: "It's not in China"
-- name: "Amsterdam"
+  country: "Japan"
+  fun_rating: 2
+amsterdam:
+  name: "Amsterdam"
   description: "Home of Ajax (not the language..nerd)"
+  country: "Netherlands"
+  fun_rating: 7

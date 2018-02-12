@@ -12,8 +12,8 @@
     <div class="dropdown">
       <a href="" class="navbar-wagon-item navbar-wagon-link" data-toggle="dropdown">Cities</a>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <% data.cities.each do |city| %>
-          <li> <a href="#"> <%= city.name %> </a></li>
+        <% data.cities.each do |city, infos| %>
+          <li> <a href="#"> <%= infos.name %> </a></li>
         <%end %>
       </ul>
     </div>

@@ -1,0 +1,9 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+<% city = data.cities[city] %>
+
+<!-- Inject flat data in template -->
+<%= image_tag "https://cdn.countryflags.com/thumbs/#{city.country.downcase}/flag-round-250.png", class: "avatar" %>
+<p><%= city.name %></p>
+<h1><%= city.description %></h1>
